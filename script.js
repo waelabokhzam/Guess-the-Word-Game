@@ -93,7 +93,7 @@ check.addEventListener("click", (eo) => {
     }
   }
   if (status) {
-    message.innerText = `you win with hint ${hint} <br> the word is ${wordToGuess}`;
+    message.innerHtml = `you win with hint ${hint} <br> the word is ${wordToGuess}`;
     message.style.color = "blue";
     let alltry = document.querySelectorAll(".inputs > div");
     alltry.forEach(item => {
